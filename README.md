@@ -1,6 +1,6 @@
 # VZIP
 
-**VZIP** (Vatsal’s ZIP) is a file compression tool written in C that implements **static Huffman coding** from scratch.
+**VZIP** (Vedant’s ZIP) is a file compression tool written in C that implements **static Huffman coding** from scratch.
 It analyzes byte frequencies, builds a Huffman tree, and compresses data using custom bit-level I/O.
 
 All core components:- heap, tree, bit packing, and file format—are implemented manually without external libraries.
@@ -87,3 +87,4 @@ Each `.vzip` file starts with a **fixed header** followed by compressed data.
 * The header size is ~2 KB due to the fixed frequency table.
 * Small files may increase in size instead of shrinking.
 * The implementation uses static (non-adaptive) Huffman coding.
+
